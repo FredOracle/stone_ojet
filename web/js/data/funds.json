@@ -1,0 +1,362 @@
+[
+    {
+        "NAME": "GNMA Fund Investor Shares",
+        "SYMBOL": "VFIIX",
+        "PRICE": 10.55,
+        "CHANGE": 0,
+        "PERCENT": 0,
+        "YTD": 0.0224,
+        "RATING": 5
+    },
+    {
+        "NAME": "High-Yield Corp Fund Inv",
+        "SYMBOL": "VWEHX",
+        "PRICE": 5.94,
+        "CHANGE": 0.01,
+        "PERCENT": 0.0017,
+        "YTD": 0.0485,
+        "RATING": 3
+    },
+    {
+        "NAME": "Inter-Term Bond Index Inv",
+        "SYMBOL": "VBIIX",
+        "PRICE": 11.32,
+        "CHANGE": 0.02,
+        "PERCENT": 0.0018,
+        "YTD": 0.0273,
+        "RATING": 4
+    },
+    {
+        "NAME": "I-T Investment-Grade Inv",
+        "SYMBOL": "VFICX",
+        "PRICE": 9.81,
+        "CHANGE": 0.02,
+        "PERCENT": 0.002,
+        "YTD": 0.0294,
+        "RATING": 4
+    },
+    {
+        "NAME": "Inter-Term Treasury Inv",
+        "SYMBOL": "VFITX",
+        "PRICE": 11.34,
+        "CHANGE": 0.02,
+        "PERCENT": 0.0018,
+        "YTD": 0.0148,
+        "RATING": 4
+    },
+    {
+        "NAME": "Total Bond Mkt Index Inv",
+        "SYMBOL": "VBMFX",
+        "PRICE": 10.66,
+        "CHANGE": 0.01,
+        "PERCENT": 0.0009,
+        "YTD": 0.0211,
+        "RATING": 3
+    },
+    {
+        "NAME": "Energy Fund Investor",
+        "SYMBOL": "VGENX",
+        "PRICE": 66.4,
+        "CHANGE": 0.05,
+        "PERCENT": 0.0008,
+        "YTD": 0.1239,
+        "RATING": 4
+    },
+    {
+        "NAME": "Health Care Fund Inv",
+        "SYMBOL": "VGHCX",
+        "PRICE": 182.48,
+        "CHANGE": -0.44,
+        "PERCENT": -0.0024,
+        "YTD": 0.3055,
+        "RATING": 3
+    },
+    {
+        "NAME": "Precious Metals & Mining",
+        "SYMBOL": "VGPMX",
+        "PRICE": 10.61,
+        "CHANGE": 0.01,
+        "PERCENT": 0.0009,
+        "YTD": -0.3344,
+        "RATING": 3
+    },
+    {
+        "NAME": "REIT Index Fund Inv",
+        "SYMBOL": "VGSIX",
+        "PRICE": 10.61,
+        "CHANGE": 0.01,
+        "PERCENT": 0.0009,
+        "YTD": 0.0472,
+        "RATING": 3
+    },
+    {
+        "NAME": "Developed Markets Idx Inv",
+        "SYMBOL": "VDMIX",
+        "PRICE": 11.29,
+        "CHANGE": -0.02,
+        "PERCENT": -0.0018,
+        "YTD": 0.1579,
+        "RATING": 3
+    },
+    {
+        "NAME": "Emerging Mkts Stk Idx Inv",
+        "SYMBOL": "VEIEX",
+        "PRICE": 25.92,
+        "CHANGE": 0.1,
+        "PERCENT": 0.0039,
+        "YTD": -0.0544,
+        "RATING": 3
+    },
+    {
+        "NAME": "European Stock Index Inv",
+        "SYMBOL": "VEURX",
+        "PRICE": 29.44,
+        "CHANGE": -0.02,
+        "PERCENT": -0.0007,
+        "YTD": 0.1633,
+        "RATING": 3
+    },
+    {
+        "NAME": "FTSE All-World ex-US Inv",
+        "SYMBOL": "VFWIX",
+        "PRICE": 19.24,
+        "CHANGE": -0.01,
+        "PERCENT": -0.0005,
+        "YTD": 0.0967,
+        "RATING": 3
+    },
+    {
+        "NAME": "FTSE AW xUS Sm-Cp Idx Inv",
+        "SYMBOL": "VFSVX",
+        "PRICE": 37.97,
+        "CHANGE": 0.02,
+        "PERCENT": 0.0005,
+        "YTD": 0.122,
+        "RATING": 1
+    },
+    {
+        "NAME": "Global Equity Fund",
+        "SYMBOL": "VHGEX",
+        "PRICE": 22.07,
+        "CHANGE": -0.06,
+        "PERCENT": -0.0027,
+        "YTD": 0.1821,
+        "RATING": 3
+    },
+    {
+        "NAME": "Gbl ex-US Real Est Ix Inv",
+        "SYMBOL": "VGXRX",
+        "PRICE": 22.63,
+        "CHANGE": -0.06,
+        "PERCENT": -0.0026,
+        "YTD": 0.1475,
+        "RATING": 3
+    },
+    {
+        "NAME": "Internatl Explorer Fund",
+        "SYMBOL": "VINEX",
+        "PRICE": 17.92,
+        "CHANGE": 0.02,
+        "PERCENT": 0.0011,
+        "YTD": 0.2182,
+        "RATING": 3
+    },
+    {
+        "NAME": "International Growth Inv",
+        "SYMBOL": "VWIGX",
+        "PRICE": 22.31,
+        "CHANGE": 0.01,
+        "PERCENT": 0.0004,
+        "YTD": 0.1578,
+        "RATING": 3
+    },
+    {
+        "NAME": "International Value Fund",
+        "SYMBOL": "VTRIX",
+        "PRICE": 35.96,
+        "CHANGE": 0.02,
+        "PERCENT": 0.0006,
+        "YTD": 0.1533,
+        "RATING": 3
+    },
+    {
+        "NAME": "Pacific Stock Index Inv",
+        "SYMBOL": "VPACX",
+        "PRICE": 11.53,
+        "CHANGE": -0.03,
+        "PERCENT": -0.0026,
+        "YTD": 0.1506,
+        "RATING": 3
+    },
+    {
+        "NAME": "Total Intl Stock Ix Inv",
+        "SYMBOL": "VGTSX",
+        "PRICE": 16.2,
+        "CHANGE": -0.01,
+        "PERCENT": -0.0006,
+        "YTD": 0.1029,
+        "RATING": 3
+    },
+    {
+        "NAME": "Total World Stock Idx Inv",
+        "SYMBOL": "VTWSX",
+        "PRICE": 22.77,
+        "CHANGE": -0.02,
+        "PERCENT": -0.0009,
+        "YTD": 0.1526,
+        "RATING": 3
+    },
+    {
+        "NAME": "Capital Opportunity Inv",
+        "SYMBOL": "VGSIX",
+        "PRICE": 44.56,
+        "CHANGE": -0.45,
+        "PERCENT": -0.01,
+        "YTD": 0.3254,
+        "RATING": 5
+    },
+    {
+        "NAME": "Capital Value Fund",
+        "SYMBOL": "VCVLX",
+        "PRICE": 14.62,
+        "CHANGE": -0.12,
+        "PERCENT": -0.01,
+        "YTD": 0.3183,
+        "RATING": 3
+    },
+    {
+        "NAME": "Explorer Fund Investor",
+        "SYMBOL": "VEXPX",
+        "PRICE": 104.94,
+        "CHANGE": -0.97,
+        "PERCENT": -0.0092,
+        "YTD": 0.3205,
+        "RATING": 3
+    },
+    {
+        "NAME": "Explorer Value Fund",
+        "SYMBOL": "VEVFX",
+        "PRICE": 30.89,
+        "CHANGE": -0.24,
+        "PERCENT": -0.0077,
+        "YTD": 0.2629,
+        "RATING": 4
+    },
+    {
+        "NAME": "Extended Mkt Index Inv",
+        "SYMBOL": "VEXMX",
+        "PRICE": 58.45,
+        "CHANGE": -0.57,
+        "PERCENT": -0.0097,
+        "YTD": 0.2749,
+        "RATING": 4
+    },
+    {
+        "NAME": "Growth Equity Fund",
+        "SYMBOL": "VGEQX",
+        "PRICE": 14.84,
+        "CHANGE": -0.15,
+        "PERCENT": -0.01,
+        "YTD": 0.2085,
+        "RATING": 3
+    },
+    {
+        "NAME": "Mid-Cap Growth Fund",
+        "SYMBOL": "VMGRX",
+        "PRICE": 25.3,
+        "CHANGE": -0.19,
+        "PERCENT": -0.0075,
+        "YTD": 0.242,
+        "RATING": 4
+    },
+    {
+        "NAME": "Mid-Cap Growth Index Inv",
+        "SYMBOL": "VMGIX",
+        "PRICE": 33.5,
+        "CHANGE": -0.3,
+        "PERCENT": -0.0089,
+        "YTD": 0.2413,
+        "RATING": 3
+    },
+    {
+        "NAME": "Mid-Cap Index Fund Inv",
+        "SYMBOL": "VIMSX",
+        "PRICE": 27.98,
+        "CHANGE": -0.23,
+        "PERCENT": -0.0082,
+        "YTD": 0.2454,
+        "RATING": 4
+    },
+    {
+        "NAME": "Mid-Cap Value Index Inv",
+        "SYMBOL": "VMVIX",
+        "PRICE": 28.86,
+        "CHANGE": -0.22,
+        "PERCENT": -0.0076,
+        "YTD": 0.2464,
+        "RATING": 3
+    },
+    {
+        "NAME": "PRIMECAP Fund Investor",
+        "SYMBOL": "VPMCX",
+        "PRICE": 87.36,
+        "CHANGE": -1.02,
+        "PERCENT": -0.0115,
+        "YTD": 0.2572,
+        "RATING": 4
+    },
+    {
+        "NAME": "Selected Value Fund",
+        "SYMBOL": "VASVX",
+        "PRICE": 27.17,
+        "CHANGE": -0.17,
+        "PERCENT": -0.0062,
+        "YTD": 0.295,
+        "RATING": 5
+    },
+    {
+        "NAME": "Small-Cap Growth Idx Inv",
+        "SYMBOL": "VISGX",
+        "PRICE": 32.21,
+        "CHANGE": -0.3,
+        "PERCENT": -0.0092,
+        "YTD": 0.2869,
+        "RATING": 4
+    },
+    {
+        "NAME": "Small-Cap Index Fund Inv",
+        "SYMBOL": "NAESX",
+        "PRICE": 49.08,
+        "CHANGE": -0.45,
+        "PERCENT": -0.0091,
+        "YTD": 0.2671,
+        "RATING": 4
+    },
+    {
+        "NAME": "Small-Cap Value Index",
+        "SYMBOL": "VISVX",
+        "PRICE": 21.62,
+        "CHANGE": -0.19,
+        "PERCENT": -0.0087,
+        "YTD": 0.2428,
+        "RATING": 3
+    },
+    {
+        "NAME": "Strategic Equity Fund",
+        "SYMBOL": "VSEQX",
+        "PRICE": 27.42,
+        "CHANGE": -0.26,
+        "PERCENT": -0.0094,
+        "YTD": 0.2783,
+        "RATING": 3
+    },
+    {
+        "NAME": "Strategic Sm-Cap Equity",
+        "SYMBOL": "VSTCX",
+        "PRICE": 27.97,
+        "CHANGE": -0.26,
+        "PERCENT": -0.0092,
+        "YTD": 0.2883,
+        "RATING": 3
+    }
+]

@@ -1,0 +1,110 @@
+<div id="listViewContainer">
+  
+  <!-- Add, Update item start -->
+  <div class='oj-flex-bar'>
+    <div class='oj-flex-bar-start'>
+      <label for="inputItem" class="oj-label-inline">Add/Update item:</label>
+    </div>
+    <div class='oj-flex-bar-middle'>
+      <input id="inputItem" data-bind="ojComponent: {component: 'ojInputText', value:itemToAdd}"></input>
+    </div>
+  </div>
+  <!-- Add, Update item end -->
+  
+  <!-- Add, Update, Remove buttons start -->
+  <button id= "addButton" data-bind="click: addItem, ojComponent: { component: 'ojButton', label: 'Add' }">
+  </button>
+  <button id= "updateButton" data-bind="click: updateSelected, ojComponent: { component: 'ojButton', label: 'Update' }">
+  </button>
+  <button id= "removeButton" data-bind="click: removeSelected, ojComponent: { component: 'ojButton', label: 'Remove', rootAttributes: {style: 'margin-top: 3px'} }">
+  </button>
+  <!-- Add, Update, Remove buttons end -->
+  
+  
+  <!--listview start -->
+  <ul id="listview" aria-label="list using observable array" 
+      data-bind="ojComponent: {
+          component: 'ojListView', 
+          data: dataSource, 
+          selectionMode: 'multiple',
+          selection: selectedItems,
+          item: 
+          {
+              renderer: function(context)
+              {
+                  return context['data']['item'];
+              }
+          }
+      }">
+  </ul>
+  <!-- listview end -->
+<ul id="listView2" data-bind="ojComponent: {component: 'ojListView'}">
+  <li><a id="group1" href="#">Group 1</a>
+    <ul>
+      <li><a id="item1-1" href="#">Item 1-1</a></li>
+      <li><a id="item1-2" href="#">Item 1-2</a></li>
+    </ul>
+  </li>
+  <li><a id="group2" href="#">Group 2</a>
+    <ul>
+      <li><a id="item2-1" href="#">Item 2-1</a></li>
+      <li><a id="item2-2" href="#">Item 2-2</a></li>
+    </ul>
+  </li>
+</ul>
+  
+  
+  
+  
+  
+  
+<ul id="listview3" aria-label="list using array" 
+       data-bind="ojComponent: {component: 'ojListView', data: dataSource2, item: {template: 'server_template'}, selectionMode: 'single'}">
+</ul>
+
+<script type="text/html" id="server_template">
+    <li data-bind="attr: {id: $data['name']}">
+        <div class="oj-flex">
+            <div class="oj-lg-2 oj-md-2 oj-sm-12" style="max-width:70px;padding-bottom:5px">
+                <img data-bind="attr: {src: 'images/listView/'+ name +'.png', alt: name}"></img>
+            </div>
+            <div class="oj-lg-10 oj-md-10 oj-sm-12">
+                <div class="oj-flex row">
+                    <div class="oj-lg-12">
+                        <span class="header" data-bind="text: 'MyWebLogic '+name"></span>
+                    </div>
+                </div>
+                <div class="oj-flex row">
+                    <div class="oj-lg-4 oj-md-4 oj-sm-12">
+                        <span class="data"><b>Version: </b><span data-bind="text: version"></span></span>
+                    </div>
+                    <div class="oj-lg-4 oj-md-4 oj-sm-12">
+                        <span class="data"><b>Nodes: </b><span data-bind="text: nodes"></span></span>
+                    </div>
+                    <div class="oj-lg-4 oj-md-4 oj-sm-12">
+                        <span class="data"><b>OCPUs: </b><span data-bind="text: cpu"></span></span>
+                    </div>
+                </div>
+                <div class="oj-flex">
+                    <div class="oj-lg-4 oj-md-4 oj-sm-12">
+                        <span class="data"><b>Type: </b><span data-bind="text: type"></span></span>
+                    </div>
+                    <div class="oj-lg-4 oj-md-4 oj-sm-12">
+                        <span class="data"><b>Load Balancer: </b><span data-bind="text: balancer"></span></span>
+                    </div>
+                    <div class="oj-lg-4 oj-md-4 oj-sm-12">
+                        <span class="data"><b>Memory: </b><span data-bind="text: memory + ' GB'"></span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</script>
+   
+</div>
+
+
+
+
+
+

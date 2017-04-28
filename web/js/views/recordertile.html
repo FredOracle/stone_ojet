@@ -1,0 +1,36 @@
+<div id="masonrylayout-reordertiles-example">
+  <ul id="demoMenu" 
+      data-bind="ojComponent: {component: 'ojMenu'}" 
+      style="display:none" 
+      aria-label="Element Reorder">
+    <li data-oj-command="oj-masonrylayout-cut" />
+    <li data-oj-command="oj-masonrylayout-paste-before"/>
+    <li data-oj-command="oj-masonrylayout-paste-after"/>
+  </ul>
+
+  <div class="demo-scroll-container">
+    <div id="masonryLayout" 
+         data-bind="ojComponent: {
+           component: 'ojMasonryLayout', 
+           reorderHandle: '.oj-panel-drag-handle'}" 
+         contextmenu="demoMenu">
+      <!-- ko foreach: chemicals -->
+      <div class="oj-panel demo-tile" 
+           data-bind="css: sizeClass">
+        <div class="oj-panel-drag-handle" 
+             data-bind="attr: {
+               id:  getDragHandleId($index()), 
+               'aria-labelledby': getDragHandleLabelledBy($index())}" 
+             title="Drag to reorder" 
+             aria-label="Drag to reorder, context menu available" 
+             tabindex="0" 
+             role="separator">
+          <span class="oj-panel-drag-icon"></span>
+        </div>
+        <span data-bind="text: name, 
+                attr: {id: getLabelId($index())}"></span>
+      </div>
+      <!-- /ko -->
+    </div>
+  </div>
+</div>

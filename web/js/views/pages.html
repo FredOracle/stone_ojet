@@ -1,0 +1,52 @@
+  <div id="createUserDialog" data-bind="attr: {title: data.name}, ojComponent:{component: 'ojDialog', initialVisibility: 'hide', rootAttributes: {style: 'width:600px; height:500px;'}}">
+    <div class="oj-dialog-body">
+      <br>
+      <!-- Train -->
+      <div id="train-container">
+        <div id="train"
+             class="oj-train-stretch"
+             data-bind="ojComponent: {component: 'ojTrain',
+  		                                selected: currentStepNo,
+  		                                steps: trainSteps,
+                                      select: function() {go(currentStepNo());}}">
+        </div>
+      </div>
+
+      <!-- Wizard Step -->
+      <div data-bind="with: currentStep">
+        <br>
+        <h2 class="oj-header-border" data-bind="text: name"></h2>
+        <br>
+
+        <!-- Displays the questions -->
+        <div data-bind="foreach: questions">
+
+          <!-- Text Question -->
+          <div data-bind="if: type == 'Text'">
+            <label data-bind="attr: {for: id}, text: question"></label>
+            <input type="text" data-bind="attr: {id: id}, ojComponent: {component: 'ojInputText', value: answer}"/>
+          </div>
+
+          <!-- YesNo Question -->
+          <div data-bind="if: type == 'YesNo'">
+            <label data-bind="attr: {for: id}, text: question"></label>
+            <select data-bind="attr: {id: id}, ojComponent: {component: 'ojSelect', value: answer}">
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+          <br>
+        </div>
+      </div> <!-- end with currentStep -->
+    </div>
+    <div class="oj-dialog-footer">
+      <!-- Next/Back Buttons -->
+      <button data-bind="click: back, ojComponent: {component: 'ojButton', label: 'Back', icons: {start:'oj-fwk-icon-caret-start oj-fwk-icon'}}"></button>
+      <button data-bind="click: next, ojComponent: {component: 'ojButton', label: 'Next', icons: {end:'oj-fwk-icon-caret-end oj-fwk-icon'}}"></button>  
+    </div>
+  </div>
+
+<div>    
+  <h1 class="oj-header-border">用户创建示例</h1>    
+  <button id="buttonOpener" data-bind="click: openCreateUserDialog, ojComponent: {component: 'ojButton', label: '创建'}"></button>
+</div>

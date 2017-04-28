@@ -1,0 +1,14 @@
+[
+    { "title": "North",
+       "attr": {"id": "msusanorth"}
+    },
+    { "title": "South",
+      "attr": {"id": "msusasouth"}
+    },
+    { "title": "East",
+      "attr": {"id": "musaeast"}
+    },
+    { "title": "West",
+      "attr": {"id": "musawest"}
+    }
+]

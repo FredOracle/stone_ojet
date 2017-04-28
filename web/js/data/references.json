@@ -1,0 +1,14 @@
+[
+    { "title": "All",
+      "attr": {"id": "refsall"}
+    },
+    { "title": "USA",
+      "attr": {"id": "refsusa"}
+    },
+    { "title": "Europe",
+      "attr": {"id": "refseurope"}
+    },
+    { "title": "Asia",
+      "attr": {"id": "refasia"}
+    }
+]

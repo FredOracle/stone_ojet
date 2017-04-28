@@ -1,0 +1,100 @@
+<div id="listviewContainer">
+
+  <div class="oj-flex-bar">
+    <div class="oj-flex-bar-start oj-sm-align-items-center">
+        <label for="paste" style="font-weight:bold;margin-right:10px">Disable drop into folder:</label>
+        <input id="paste" type="checkbox" data-bind="checked: disablePasteIntoFolder"/>
+    </div>
+
+    <div class="oj-flex-bar-end" 
+        data-bind="ojComponent: {component: 'ojButtonset', checked: activeLayout, chroming: 'half', optionChange: handleLayoutChange}" aria-label="Choose layout view.">
+        <!-- ko foreach: layoutViewRadios -->
+	  <label data-bind="attr: {for: id}"></label>                               
+	  <input type="radio" name="beverage" data-bind="value: id, attr: {id: id}, 
+		ojComponent: { component: 'ojButton', label: id, icons: {start: icon}, display: 'icons' }"/>
+        <!-- /ko -->
+    </div>    
+  </div>
+
+  <ul id="itemMenu" 
+      data-bind="ojComponent: {component: 'ojMenu'}" 
+      style="display:none" 
+      aria-label="Item Reorder">
+    <li data-oj-command="oj-listview-cut" />
+    <li data-oj-command="oj-listview-paste-before"/>
+    <li data-oj-command="oj-listview-paste-after"/>
+  </ul>
+
+  <ul id="itemAndFolderMenu" 
+      data-bind="ojComponent: {component: 'ojMenu'}" 
+      style="display:none" 
+      aria-label="Item Reorder">
+    <li data-oj-command="oj-listview-cut" />
+    <li data-oj-command="oj-listview-paste"/>
+    <li data-oj-command="oj-listview-paste-before"/>
+    <li data-oj-command="oj-listview-paste-after"/>
+  </ul>
+
+  <ul id="listview" aria-label="list using json data" contextmenu="itemMenu"
+          data-bind="ojComponent: {component: 'ojListView', 
+                                   data: dataSource, 
+                                   item: {template: selectTemplate, focusable: itemOnly}, 
+                                   drillMode: 'none',
+                                   dnd: {
+                                       reorder: {items: 'enabled'},
+                                       drop: {items: {dragOver: handleDragOver}}
+                                   },
+                                   reorder: handleReorder
+                                  }">
+  </ul>
+
+</div>
+
+<script type="text/html" id="group_template">
+    <li data-bind="attr: {id: id, 'aria-label': name}" class="folder">
+        <strong data-bind="text: name"></strong>
+    </li>
+</script>
+
+<script type="text/html" id="item_template">
+    <li data-bind="attr: {id: id, 'aria-label': name}">
+        <div class="oj-flex-bar">
+            <div class="oj-flex-bar-start oj-flex-bar">
+                <div class="oj-flex-bar-start">
+                    <div data-bind="style: { backgroundImage: 'url(\'images/listView/' + type + '.png\')', 
+                         backgroundRepeat: 'no-repeat', backgroundSize: '100%', height: '40px', width: '40px' }, attr: { 'aria-label': type }"></div>
+                </div>
+                <div class="oj-flex-bar-middle oj-sm-flex-direction-column" style="margin-left: 10px">
+                    <div class="oj-flex-item">
+                        <strong data-bind="text: name"></strong>
+                    </div>
+                    <div class="oj-flex-item">
+                        <span class="oj-text-xs oj-text-secondary-color" data-bind="text: 'Last modified on ' + modified"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="oj-flex-bar-end oj-sm-align-items-center">
+              <div data-bind="attr: {id: id +'_draghandle', 'aria-labelledby': id + '_draghandle', 'aria-label': 'Reorder ' + name + ', draggable, context menu available'}" role="button" tabindex="0" class="oj-flex-item oj-listview-drag-handle"></div>
+            </div>         
+        </div>
+    </li>
+</script>
+
+<script type="text/html" id="item_grid_template">
+    <li data-bind="attr: {id: id, 'aria-label': name}" style="padding-top:0">
+      <div style="position:relative">
+        <div class="oj-flex">
+            <div role="button" tabindex="0" class="oj-sm-justify-content-center oj-flex-item oj-fwk-icon oj-listview-drag-handle" aria-label="Reorder item, context menu available"></div>
+        </div>
+        <div class="oj-panel demo-griditem-content demo-icon">
+            <div style="width:100%;max-width:70px;padding:0">
+                <div data-bind="style: { backgroundImage: 'url(\'images/listView/' + type + '.png\')', 
+                     backgroundRepeat: 'no-repeat', backgroundSize: '100%', height: '70px', width: '100%' }, attr: { 'aria-label': type }"></div>
+            </div>
+        </div>
+        <div class="demo-griditem-content">
+            <strong data-bind="text: name"></strong>
+        </div>
+      </div>
+    </li>
+</script>

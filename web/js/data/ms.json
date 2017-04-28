@@ -1,0 +1,9 @@
+[
+   { "title": "USA",
+     "attr": {"id": "msusa"},
+     "children": []
+   },
+   { "title": "Europe",
+     "attr": {"id": "msuerope"}
+   }
+]
