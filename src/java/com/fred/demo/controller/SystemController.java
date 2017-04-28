@@ -23,7 +23,7 @@ public class SystemController {
 
     @RequestMapping("welcome")
     public String welcome() {
-        System.out.println("======================");
+        System.out.println("========aaaa==============");
         return "welcome";
     }
 }
